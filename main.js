@@ -8,11 +8,11 @@ function convertFahrToCelcius(x) {
 
     } else if (Array.isArray(x) === true) {
 
-        console.error('[' + x + '] is not a vaild number it is an array');
+        console.error('[' + x + '] is not a vaild number it is a/an array');
 
     } else if (typeof x === 'object') {
         // how to change object to string JSON.stringify(obj)
-        console.error('Sorry ' + JSON.stringify(x) + ' is not a vaild numebr its an object');
+        console.error(JSON.stringify(x) + ' is not a vaild numebr its a/an object');
 
     }
 };
@@ -30,7 +30,7 @@ function checkYuGiOh(n) {
         for (t = 0; t < n; t++) {
 
         // if else for assessment of numbers
-        // Numebr is divisble by two with no remiender is represented by (Number % 2 == 0)
+        // Number is divisble by two with no remiender is represented by (Number % 2 == 0)
             arr.push(n - t);
             if (arr[t] % 2 == 0 && arr[t] % 3 == 0 && arr[t] % 5 == 0) {
                 resultarr[t] = 'yu-gi-oh';
